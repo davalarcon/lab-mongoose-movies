@@ -40,7 +40,7 @@ router.post('/celebrities',(req, res, next)=>{
     name: req.body.celebrityName,
     occupation: req.body.celebrityOccupation,
     catchPhrase: req.body.celebrityCatchPhrase,
-    imageUrl: req.body.celbrityImageUrl,
+    imageUrl: req.body.celebrityImageUrl,
   });
 
   theCelebrity.save((err)=>{

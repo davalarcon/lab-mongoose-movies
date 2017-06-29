@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(layouts);
 
-
+//--------ROUTES HERE 👇👇👇👇👇---------------------------------
 
 const celebrityRoute = require('./routes/celebrity-route.js');
 app.use('/', celebrityRoute);
@@ -35,6 +35,7 @@ app.use('/', celebrityRoute);
 const index = require('./routes/index.js');
 app.use('/', index);
 
+//---------ROUTES HERE 👆👆👆👆👆👆---------------------------------
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
