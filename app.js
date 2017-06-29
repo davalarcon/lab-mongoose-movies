@@ -29,9 +29,11 @@ app.use(layouts);
 
 
 
-const index = require('./routes/index');
-app.use('/', index);
+const celebrityRoute = require('./routes/celebrity-route.js');
+app.use('/', celebrityRoute);
 
+const index = require('./routes/index.js');
+app.use('/', index);
 
 
 // catch 404 and forward to error handler
