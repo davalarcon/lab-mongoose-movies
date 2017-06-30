@@ -1,0 +1,13 @@
+<h2>MOVIE DETAIL</h2>
+
+<h3><%= theMovie.title %></h3>
+
+<p> <%= theMovie.genre %></p>
+
+<p> <%= theMovie.plot %></p>
+
+<img src="<%= theMovie.imageUrl %>" height='400px'><br><br>
+
+<form action="/movies/<%=theMovie._id%>/delete" method="post">
+  <button>Delete Movie</button>
+</form>

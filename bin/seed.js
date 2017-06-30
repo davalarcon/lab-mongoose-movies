@@ -8,22 +8,26 @@ const myMovieArray = [
   {
     title: 'The Matrix',
     genre:  'Science Fiction',
-    plot: 'Machines enslave humans. Humans fight back'
+    plot: 'Machines enslave humans. Humans fight back',
+    imageUrl: 'http://rhizome.org/static-media/uploads/blog/8972/tmp_1gl3S',
   },
   {
     title: 'Interstellar',
     genre:  'Science Fiction',
-    plot: 'The world is coming to an end. Humans try to find a new home'
+    plot: 'The world is coming to an end. Humans try to find a new home',
+    imageUrl: 'http://t1.gstatic.com/images?q=tbn:ANd9GcRf61mker2o4KH3CbVE7Zw5B1-VogMH8LfZHEaq3UdCMLxARZAB',
   },
   {
     title: 'The Martian',
     genre:  'Science Fiction',
-    plot: 'Astronaunt gets stranded in Mars. Humans try to rescue him.'
+    plot: 'Astronaunt gets stranded in Mars. Humans try to rescue him.',
+    imageUrl:'http://t2.gstatic.com/images?q=tbn:ANd9GcTkKPZ7EIOafEsemyn6zTIDeGYthKC_Okgxi1eX6diuOT3xKWXQ',
   },
   {
     title:  'Ever After',
     genre:  'Romance',
-    plot: 'Cinderella made real'
+    plot: 'Cinderella made real',
+    imageUrl:'http://www.gstatic.com/tv/thumb/movieposters/21445/p21445_p_v8_aa.jpg',
   },
 ];
 
