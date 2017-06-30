@@ -1,0 +1,20 @@
+<h2>EDIT CELEBRITY INFO HERE</h2>
+
+<form action="/celebrities/<%= celebrityFromDb._id %>/update" method="post">
+
+  <label for="celebrity-name-input">Enter Celebrity Name:</label><br>
+  <input for="celebrity-name-input" type="text" name="celebrityName" value="<%= celebrityFromDb.name %>"><br>
+
+  <label for="celebrity-occupation-input">Enter Celebrity occupation:</label><br>
+  <input for="celebrity-occupation-input" type="text" name="celebrityOccupation" value="<%= celebrityFromDb.occupation %>"><br>
+
+  <label for="celebrity-catchPhrase-input">Enter Celebrity Name:</label><br>
+  <input for="celebrity-catchPhrase-input" type="text" name="celebrityCatchPhrase" value="<%= celebrityFromDb.catchPhrase %>"><br>
+
+  <label for="celebrity-imageUrl-input">Enter Celebrity Name:</label><br>
+  <input for="celebrity-imageUrl-input" type="text" name="celebrityImageUrl" value="<%= celebrityFromDb.imageUrl %>"><br>
+  <br>
+
+  <button>Save Changes</button>
+
+</form>

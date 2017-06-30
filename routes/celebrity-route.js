@@ -73,6 +73,28 @@ router.get('/celebrities/:myId/edit', (req, res, next)=>{
         next(err);
         return;
       }
+      res.render('celebrities/celebrities-edit-view.ejs',{
+        celebrityFromDb:celebrityFromDb
+      });
+    }
+  );
+});
+
+router.post('/celebrities/:myId/update', (req, res, next)=>{
+  Celebrity.findByIdAndUpdate(
+    req.params.myId,
+    {
+      name: req.body.celebrityName,
+      occupation: req.body.celebrityOccupation,
+      catchPhrase: req.body.celebrityCatchPhrase,
+      imageUrl: req.body.celebrityImageUrl,
+    },
+    (err, celebrityFromDb)=>{
+      if(err){
+        next(err);
+        return;
+      }
+      res.redirect('/celebrities/'+ celebrityFromDb._id +'/details');
     }
   );
 });
